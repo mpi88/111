@@ -1,0 +1,123 @@
+.header, .footer {
+    display: none;
+  }
+  .api {
+    background-color: #202125;
+    z-index: 2000;
+    padding: 50px;
+    padding-left: 350px;
+    color: #6F6F71;
+  }
+  .api-menu {
+    position: fixed;
+    top: 30px;
+    left: 50px;
+    bottom: 30px;
+    background-color: #18191D;
+    width: 250px;
+    border-radius: 6px;
+    padding: 1.5rem 0;
+  }
+
+  @media(max-width:991px){
+      .api {
+        padding: 20px !important;
+      }
+      .api-menu  {
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+  }
+
+
+  .api-logo {
+    height: 36px;
+  }
+  .api-nav a {
+    padding: .75rem 2rem;
+    font-weight: bold;
+    color: #6F6F71;
+  }
+  .api-nav > li {
+    margin-bottom: .75rem;
+  }
+  .api-nav > li > a {
+    border-left: 3px solid transparent;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+  }
+  .api-nav > li > a.active {
+    background: -webkit-linear-gradient(left, rgba(16,17,19,0.1) 0%,rgba(79,113,224,0.1) 100%);
+    border-color: #4F71E0;
+    color: #fff;
+  }
+    .api-nav > li > a svg {
+      fill: currentColor;
+      margin-right: 12px;
+    }
+    .api-nav > li > a.active svg {
+      fill: #4F71E0;
+      margin-right: 8px;
+    }
+    .api-nav .nav {
+      display: none;
+    }
+    .api-nav a.active + .nav {
+      display: block;
+    }
+  .api-nav .nav a {
+    padding-left: 3.75rem;
+    font-weight: normal;
+  }
+  .api-nav .nav a.active {
+    color: #fff;
+  }
+  .api .border-bottom {
+    border-color: #3B3C40 !important;
+  }
+  .api-key {
+    border: 2px solid #408D8A;
+    border-radius: 5px;
+    color: #408D8A;
+    padding: 0 .75rem;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .api .table th,
+  .api .table td{
+    border-color: #3B3C40 !important;
+  }
+  .api-example {
+    padding: 0.35rem .5rem;
+    letter-spacing: 1px;
+  }
+:not(pre)>code[class*=language-],
+pre[class*=language-] {
+ background:#16171B!important
+}
+pre[class*=language-] * {
+  text-shadow:none !important;
+  background: none !important;
+}
+.token.attr-name, .token.builtin, .token.char, .token.inserted, .token.selector, .token.string {
+  color: #408D8A !important;
+}
+.token.boolean, .token.constant, .token.deleted, .token.number, .token.property, .token.symbol, .token.tag {
+  color: #4F71E0 !important;
+}
+.text-muted {
+  color: #6F6F71 !important;
+}
+.api-menu-mobile {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
